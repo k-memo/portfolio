@@ -6,6 +6,19 @@ footer {
     a:hover {
         text-decoration: underline;
     }
+
+    .source-link {
+        padding: 4px;
+        background-color: white;
+        color: black;
+        border-radius: 6px;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+            scale: 1.2;
+        }
+
+    }
 }
 
 #footer-content {
@@ -16,7 +29,7 @@ footer {
     padding-top: 4rem;
     justify-content: start;
     align-items: start;
-    max-width: 1200px;
+    max-width: 1400px;
     width: 100%;
     margin: auto;
 }

@@ -5,14 +5,19 @@ header {
     height: 5rem;
     padding-left: 3rem;
     padding-right: 3rem;
-    max-width: 1200px;
+    max-width: 1400px;
     width: 100%;
     margin: auto;
+    align-items: center;
 }
 
 #header-logo {
+    height: 3rem;
+    width: 3rem;
+
     svg {
         height: 3rem;
+        width: 3rem;
     }
 
     display: flex;
