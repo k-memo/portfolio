@@ -10,7 +10,7 @@ export default function Header() {
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
           y="0px"
-          enable-background="new 0 0 600 600"
+          enableBackground="new 0 0 600 600"
           viewBox="112.5 154.43 375 291.13"
         >
           <g id="Layer_1_1_">
