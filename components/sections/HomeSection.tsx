@@ -16,7 +16,7 @@ export default function HomeSection() {
         </a>
       </div>
       <div id="heroimage-container">
-        <Image src="/images/memo_1.jpg" layout="fill" alt="profile image" />
+        <img src="/images/memo_1.jpg" alt="profile image" />
       </div>
     </section>
   );

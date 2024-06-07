@@ -37,6 +37,7 @@
         position: absolute;
         margin: auto;
         filter: saturate(0);
+        height: 100%;
     }
 }
 
@@ -46,7 +47,7 @@
         box-sizing: border-box;
         flex-direction: column-reverse;
         align-items: center;
-        justify-content: start;
+        justify-content: flex-start;
         gap: 2rem;
     }
 
