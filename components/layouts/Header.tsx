@@ -1,11 +1,11 @@
 import Link from "next/link";
-import GatoWink from "./GatoWink";
+import GatoWink from "../GatoRiv";
 
 export default function Header() {
   return (
     <header>
       <Link href="/" id="header-logo">
-        <GatoWink />
+        <GatoWink stateMachines="wink" />
       </Link>
       <nav className="mobile-invisible">
         <ul>

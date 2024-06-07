@@ -1,6 +1,6 @@
 "use client";
 import { GoTriangleDown } from "react-icons/go";
-import GatoWink from "./GatoWink";
+import GatoWink from "./GatoRiv";
 
 const toggleContent = (listItem: HTMLElement) => {
   // Select all content elements
