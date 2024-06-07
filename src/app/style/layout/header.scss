@@ -48,6 +48,14 @@ header {
                     &:hover {
                         text-decoration: underline;
                     }
+
+                    svg {
+                        transition: 0.3s;
+
+                        &:hover {
+                            fill: #ea1414;
+                        }
+                    }
                 }
             }
         }
@@ -123,8 +131,7 @@ header {
         position: absolute;
         top: 0;
         right: 0;
-        width: 0px; // Change width to 0px
-        height: 100vh;
+        width: 0;
         background-color: #ea1414;
         color: white;
         margin: 0;
@@ -135,13 +142,13 @@ header {
         padding-top: 5rem;
         list-style: none;
         clear: both;
-        height: auto; // Change height to auto
         text-align: center;
         overflow: hidden;
         transition: width 0.4s ease; // Change height to width
         z-index: 110;
         -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease;
+        height: 100vh;
 
         a:first-child {
             margin-top: 40px;

@@ -1,5 +1,7 @@
 import Link from "next/link";
 import GatoWink from "../GatoRiv";
+import { RiGithubFill } from "react-icons/ri";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function Header() {
   return (
@@ -10,16 +12,26 @@ export default function Header() {
       <nav className="mobile-invisible">
         <ul>
           <li>
-            <a href="#home">Home</a>
+            <Link href="#home">Home</Link>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <Link href="#projects">Projects</Link>
           </li>
           <li>
-            <a href="#about">About</a>
+            <Link href="#about">About</Link>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <Link href="#contact">Contact</Link>
+          </li>
+          <li>
+            <Link href="https://github.com/k-memo">
+              <RiGithubFill size={32} />
+            </Link>
+          </li>
+          <li>
+            <Link href="https://linkedin.com/in/mehmetki">
+              <FaLinkedin size={32} />
+            </Link>
           </li>
         </ul>
       </nav>
@@ -30,10 +42,16 @@ export default function Header() {
           <div className="meat" id="meat"></div>
         </label>
         <nav className="dropdown" id="dropdown">
-          <a href="#home">Home</a>
-          <a href="#projects">Projects</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+          <Link href="#home">Home</Link>
+          <Link href="#projects">Projects</Link>
+          <Link href="#about">About</Link>
+          <Link href="#contact">Contact</Link>
+          <Link href="https://github.com/k-memo">
+            <RiGithubFill size={32} />
+          </Link>
+          <Link href="https://linkedin.com/in/mehmetki">
+            <FaLinkedin size={32} />
+          </Link>
         </nav>
       </nav>
     </header>

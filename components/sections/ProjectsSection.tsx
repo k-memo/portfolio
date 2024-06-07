@@ -1,8 +1,8 @@
 import { FaCss3Alt, FaHtml5 } from "react-icons/fa";
-import Pagelet from "./Pagelet";
-import ProjectListItem from "./ProjectListItem";
+import Pagelet from "../Pagelet";
+import ProjectListItem from "../ProjectListItem";
 import { RiJavascriptFill } from "react-icons/ri";
-import { SiRubyonrails } from "react-icons/si";
+import { SiArduino, SiAutocad, SiPhp, SiRubyonrails } from "react-icons/si";
 import { PiFigmaLogoFill } from "react-icons/pi";
 
 export default function ProjectsSection() {
@@ -72,7 +72,7 @@ export default function ProjectsSection() {
                   <FaHtml5 size={50} />
                   <FaCss3Alt size={50} />
                   <RiJavascriptFill size={50} />
-                  <SiRubyonrails size={50} />
+                  <SiPhp size={50} />
                 </div>
               </Pagelet>
               <Pagelet title="Dashboard">
@@ -160,6 +160,12 @@ export default function ProjectsSection() {
                   using the UnoJoy Github repo. All in all it was a very fun
                   project and my first time using an Arduino Board!
                 </p>
+
+                <h3>Stack</h3>
+                <div className="stack-bar">
+                  <SiArduino size={50} />
+                  <SiAutocad size={50} />
+                </div>
               </Pagelet>
               <Pagelet>
                 <img src="/images/stick/stick_1.jpg" alt="fighting stick" />
