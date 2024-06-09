@@ -1,6 +1,7 @@
 import {
   FaCss3Alt,
   FaEnvelope,
+  FaGithub,
   FaGlobe,
   FaHouse,
   FaHtml5,
@@ -102,6 +103,12 @@ export default function CvSection() {
             <FaLinkedin size={16} />
             <a href="https://www.linkedin.com/in/mehmetki">
               www.linkedin.com/in/mehmetki
+            </a>
+          </div>
+          <div className="myself-info">
+            <FaGithub size={16} />
+            <a href="https://www.linkedin.com/in/mehmetki">
+              https://github.com/k-memo
             </a>
           </div>
           <div className="myself-info">
