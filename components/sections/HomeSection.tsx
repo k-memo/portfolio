@@ -1,6 +1,49 @@
-import Image from "next/image";
+"use client";
+
+import { useEffect } from "react";
 
 export default function HomeSection() {
+  useEffect(() => {
+    const moveEyes = (e: MouseEvent) => {
+      const mouseX = e.clientX;
+      const mouseY = e.clientY;
+
+      const anchor = document.getElementById("avatar");
+      const rekt = anchor?.getBoundingClientRect();
+
+      if (!rekt) return;
+
+      const anchorX = rekt.left + rekt.width / 2;
+      const anchorY = rekt.top + rekt.height / 2;
+
+      const angleDeg = angle(mouseX, mouseY, anchorX, anchorY);
+
+      const eyes = document.querySelectorAll(".eye") as NodeListOf<HTMLElement>;
+
+      console.log(angleDeg);
+
+      eyes.forEach((eye) => {
+        eye.style.transform = `rotate(${-45 + angleDeg}deg)`;
+      });
+    };
+
+    document.addEventListener("mousemove", moveEyes);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      document.removeEventListener("mousemove", moveEyes);
+    };
+  }, []);
+
+  const angle = (cx: number, cy: number, ex: number, ey: number): number => {
+    const dy = ey - cy;
+    const dx = ex - cx;
+    const rad = Math.atan2(dy, dx);
+    const deg = (rad * 180) / Math.PI;
+
+    return deg as number;
+  };
+
   return (
     <section id="home">
       <div id="herotext">
@@ -16,7 +59,23 @@ export default function HomeSection() {
         </a>
       </div>
       <div id="heroimage-container">
-        <img src="/images/memo_1.jpg" alt="profile image" />
+        <img src="/images/avatar.png" alt="profile image" id="avatar" />
+        <div id="eyes">
+          <div
+            className="eye"
+            d-side="left"
+            style={{ left: "97px", top: "138px" }}
+          >
+            <div className="pupil"></div>
+          </div>
+          <div
+            className="eye"
+            d-side="right"
+            style={{ left: "176px", top: "138px" }}
+          >
+            <div className="pupil"></div>
+          </div>
+        </div>
       </div>
     </section>
   );
