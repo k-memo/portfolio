@@ -37,9 +37,9 @@ export default function CvSection() {
         <br />
         <br />
         I&apos;m <strong>Mehmet</strong>, a passionate
-        <strong>web and mobile developer</strong> currently pursuing a degree in
-        Computer Science at the
-        <strong>University of Applied Sciences Salzburg</strong>. <br />
+        <strong> web and mobile developer</strong> currently pursuing a degree
+        in Computer Science at the
+        <strong> University of Applied Sciences Salzburg</strong>. <br />
         <br />I thrive on the intersection of technology and creativity, with a
         keen interest in industrial design. In my free time I like to design and
         create stuff on my 3D Printer.
