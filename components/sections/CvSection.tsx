@@ -108,7 +108,7 @@ export default function CvSection() {
           <div className="myself-info">
             <FaGithub size={16} />
             <a href="https://www.linkedin.com/in/mehmetki">
-              https://github.com/k-memo
+              www.github.com/k-memo
             </a>
           </div>
           <div className="myself-info">
