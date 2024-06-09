@@ -20,8 +20,6 @@ export default function HomeSection() {
 
       const eyes = document.querySelectorAll(".eye") as NodeListOf<HTMLElement>;
 
-      console.log(angleDeg);
-
       eyes.forEach((eye) => {
         eye.style.transform = `rotate(${-45 + angleDeg}deg)`;
       });
