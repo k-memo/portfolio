@@ -26,25 +26,32 @@ import {
 } from "react-icons/si";
 import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 import { PiFigmaLogoFill } from "react-icons/pi";
+import GatoRiv from "../GatoRiv";
 
 export default function CvSection() {
   return (
     <section id="about">
       <h2>About me</h2>
-      <p>
-        <span style={{ fontSize: "2rem", fontWeight: "600" }}>
-          <span className="hand">👋</span> Hi there!
-        </span>
-        <br />
-        <br />
-        I&apos;m <strong>Mehmet</strong>, a passionate
-        <strong> web and mobile developer</strong> currently pursuing a degree
-        in Computer Science at the
-        <strong> University of Applied Sciences Salzburg</strong>. <br />
-        <br />I thrive on the intersection of technology and creativity, with a
-        keen interest in industrial design. In my free time I like to design and
-        create stuff on my 3D Printer.
-      </p>
+      <div className="about-text">
+        <div className="inline">
+          <p>Hi</p>
+          <div className="gato-wave">
+            <GatoRiv stateMachines="wave" />
+          </div>
+          <p>!</p>
+        </div>
+        <p>
+          I&apos;m <strong>Mehmet</strong>, a<strong> web developer</strong>{" "}
+          currently pursuing a degree in Computer Science at the
+          <strong> University of Applied Sciences Salzburg</strong>.
+        </p>
+        <p>
+          I enjoy combining technology and creativity, with a particular
+          interest in industrial design. In my free time, I love designing and
+          creating objects with my 3D printer and often spend time
+          distrohopping.
+        </p>
+      </div>
       <div id="cv">
         <div id="about-image-container">
           <img src="images/memo_3.jpeg" alt="full body image of memo" />

@@ -21,15 +21,40 @@
 }
 
 #about {
+
     h2 {
         font-size: 2rem;
         text-decoration: underline;
     }
 
-    >p {
+    >p,
+    .about-text>p {
         font-size: 1.3rem;
         line-height: 2rem;
     }
+
+    .about-text {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .inline {
+        position: relative;
+        display: flex;
+        gap: 5rem;
+        font-size: 2rem;
+    }
+
+    .gato-wave {
+        position: absolute;
+        height: 4rem;
+        width: 4rem;
+        left: 3rem;
+        top: 5px;
+    }
+
 
     h3 {
         text-decoration: underline;
